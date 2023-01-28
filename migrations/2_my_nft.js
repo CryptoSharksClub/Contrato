@@ -1,5 +1,5 @@
-const FunkyCrocs = artifacts.require("FunkyCrocs");
+const CryptoSharksClub = artifacts.require("CryptoSharksClub");
 
 module.exports = function (deployer) {
-  deployer.deploy(FunkyCrocs);
+  deployer.deploy(CryptoSharksClub);
 };
