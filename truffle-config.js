@@ -21,8 +21,14 @@ module.exports = {
       provider: function () {
         return new HDWalletProvider(process.env.PRIVATE_KEY, process.env.MAINNET_RPC_URL);
       },
-      network_id: 1,
+      network_id: 137,
       skipDryRun: true,
+    },
+    truffle: {
+      url: 'http://localhost:24012/rpc',
+      network_id: '137',
+      timeout: 4000000,
+      gasMultiplier: 1,
     }
   },
   mocha: {

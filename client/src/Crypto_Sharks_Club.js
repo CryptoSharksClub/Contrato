@@ -1,4 +1,4 @@
-const NETWORK_ID = 80001
+const NETWORK_ID = 137
 var NFT_PRICE = null
 var PRESALE_PRICE = null
 var MAX_SUPPLY = null

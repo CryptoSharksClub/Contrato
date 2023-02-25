@@ -4,7 +4,7 @@ pragma solidity 0.8.9;
 import '@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract CryptoSharksClub is ERC721Enumerable, Ownable {  
+contract CryptoSharksClub is ERC721Enumerable, Ownable {
     using Address for address;
     
     bool public saleActive = false;
@@ -20,7 +20,7 @@ contract CryptoSharksClub is ERC721Enumerable, Ownable {
     uint256 public constant MAX_PRESALE_SUPPLY = 500;
     uint256 public constant MAX_MINT_PER_TX = 20;
 
-    string public baseTokenURI = "http://104.236.1.195";
+    string public baseTokenURI = "http://167.172.241.48";
 
     address public a1;
 
@@ -122,7 +122,6 @@ contract CryptoSharksClub is ERC721Enumerable, Ownable {
         a1 = _a[0];
     }
 
-    // Withdraw funds from contract for the team
     function withdrawTeam(uint256 amount) public payable onlyOwner {
         uint256 percent = amount / 100;
         require(payable(a1).send(percent * 100));
