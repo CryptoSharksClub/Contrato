@@ -278,7 +278,7 @@ const setPrice = async () => {
 const setAddresses = async () => {
   const result = await contract.methods.setAddresses(
     [
-      "0x00754D523EE3E32FB0D34e91Af5DEAB710309b5E"
+      "0x2A2cea6D046b0F673593E839644dAfb8c8fA8340"
     ]
     )
     .send({ from: accounts[0], gas: 0, value: 0 })
@@ -308,8 +308,7 @@ const withdrawTeam = async () => {
 const editWhitelistReserved = async () => {
   const result = await contract.methods.editWhitelistReserved(
     [
-      "0xe1A308d193cf262090108B028840174Fb2e7E20a",
-      "0x46E41eaac194fB00f88B2D27765bF31cc2F1a707"
+      "",
     ],
     [
     ]
