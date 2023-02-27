@@ -18,15 +18,15 @@ contract CryptoSharksClub is ERC721Enumerable, Ownable {
 
     uint256 public constant MAX_SUPPLY = 6557;
     uint256 public constant MAX_PRESALE_SUPPLY = 500;
-    uint256 public constant MAX_MINT_PER_TX = 20;
+    uint256 public constant MAX_MINT_PER_TX = 6557;
 
-    string public baseTokenURI = "http://167.172.241.48";
+    string public baseTokenURI = "http://167.172.241.48/";
 
     address public a1;
 
     mapping (address => uint256) public whitelistReserved;
 
-    constructor () ERC721 ("CryptoSharks Club", "CSC") {
+    constructor () ERC721 ("CryptoSharksClub", "CSC") {
         price = initial_price;
     }
 
